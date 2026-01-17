@@ -1,0 +1,28 @@
+# sample_slots.csv
+# A repeatable slot-table fixture for offline testing.
+# Columns:
+# slot, address, speed, status, throttleType, throttleId, consistId, lastActivityEpoch
+#
+# status: ACTIVE | IN_USE | COMMON | IDLE (use whatever labels your simulator expects)
+# throttleType: JMRI | WITHTHROTTLE | HANDHELD | UNKNOWN
+# throttleId: integer (optional)
+# consistId: integer (0 or blank if none)
+# lastActivityEpoch: Unix epoch seconds (older = more idle)
+
+slot,address,speed,status,throttleType,throttleId,consistId,lastActivityEpoch
+1,12345,10,IN_USE,WITHTHROTTLE,18,,1737160000
+2,4450,12,IN_USE,JMRI,18,,1737160005
+3,7001,8,IN_USE,HANDHELD,33,,1737160010
+4,9021,5,IN_USE,HANDHELD,34,,1737160012
+5,611,1,IN_USE,JMRI,18,,1737160015
+
+6,8888,0,IDLE,WITHTHROTTLE,18,,1737150000
+7,312,0,IDLE,JMRI,18,,1737150000
+8,4010,0,COMMON,JMRI,18,,1737150000
+9,9090,0,IDLE,HANDHELD,33,,1737150000
+10,7777,0,IDLE,UNKNOWN,,,1737150000
+
+# Optional consist example: consistId=990
+11,2001,0,IDLE,JMRI,18,990,1737150000
+12,2002,0,IDLE,JMRI,18,990,1737150000
+13,2003,0,IDLE,JMRI,18,990,1737150000
