@@ -7,17 +7,19 @@ It does this by periodically sending **dispatch** (preferred) and optional **rel
 
 ## What this does (and what it does not)
 
-### It does
+### It does ( is the idea )
 - Reclaim **idle** locomotives and (optionally) consists that have been stopped and untouched for longer than a timeout.
 - Reduce slot pressure without needing a command station reset mid-session.
 - Log every action so operators can audit what happened.
 
-### It does NOT
+### It does NOT ( is the idea )
 - "Delete" slots from the Digitrax command station instantly.
 - Force the slot list to visually shrink in real-time.
 - Replace operator discipline (Stop -> Dispatch -> Disconnect).
 
 Digitrax slots are managed in the command station firmware; JMRI can only request that slots be dispatched/released so they become eligible for reuse.
+
+There is still a fair amount of testing to do, but I’m confident the core concept we discussed is sound. Based on what I’ve read in the Digitrax documentation on slot behaviour, and how JMRI interacts with slots in its source code, I believe we now have most of what’s needed to make this work effectively.
 
 ---
 
