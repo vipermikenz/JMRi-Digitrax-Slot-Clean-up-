@@ -19,6 +19,8 @@ It does this by periodically sending **dispatch** (preferred) and optional **rel
 
 Digitrax slots are managed in the command station firmware; JMRI can only request that slots be dispatched/released so they become eligible for reuse.
 
+---
+
 ## Freemo ops rule (plain English)
 
 **Purpose**
@@ -47,6 +49,8 @@ If any activity occurs, the timer resets.
 **Protection**
 - Addresses listed in `protected_addresses.txt` are never touched.
 
+---
+
 ## Running in JMRI (live)
 
 ### 1) Install
@@ -70,6 +74,8 @@ Run a session, review the log, then enable sending and/or include handheld throt
 - Mode: dispatch then release fallback
 - Protected list enabled
 - Logging enabled
+
+---
 
 ## Testing without a layout (simulation)
 
