@@ -75,9 +75,11 @@ This ensures:
 Before running on real hardware, set:
 
 DRY_RUN = True
+
 INCLUDE_HANDHELD_THROTTLES = False
 
 IDLE_TIMEOUT_SECONDS = 120
+
 CONSIST_IDLE_TIMEOUT_SECONDS = 300
 
 This configuration:
