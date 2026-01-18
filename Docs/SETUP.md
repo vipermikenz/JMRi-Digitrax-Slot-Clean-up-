@@ -200,10 +200,12 @@ This reduces the risk of reclaiming a slot from someone who has paused briefly.
 The file protected_addresses.txt contains one DCC address per line.
 Any address listed here is never dispatched or released by the script.
 
-Example:
+Example (jsut random numbers meaningless data):
 
 9999
+
 12345
+
 2001
 
 Typical uses:
