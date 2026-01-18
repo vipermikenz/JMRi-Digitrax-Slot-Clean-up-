@@ -52,7 +52,6 @@ PROTECTED_ADDRESSES_FILE = os.path.join(BASE_DIR, "protected_addresses.txt")
 LOG_TO_CONSOLE = True
 LOG_FILE = os.path.join(BASE_DIR, "FreemoSlotRecycler.log")
 
-
 # Safety switches
 DRY_RUN = False                          # Set True to see what it would do without sending any LocoNet messages
 SKIP_SYSTEM_SLOTS = True                 # Skip system slots if detectable
@@ -362,6 +361,7 @@ def _slot_idle_seconds(rec):
 
 # Perform one cleanup pass
 def _cleanup_once(memo):
+    _log("A scan was started ....")
     protected = _load_protected_addresses()
 
     slot_manager = memo.getSlotManager()

@@ -1,4 +1,5 @@
 # JMRI Automatic Slot Clean-Up Script
+
 ## Technical Implementation Guide
 
 This document explains how the [Automatic Slot Clean-Up Policy](README.md) is implemented in JMRI, including how it safely handles handheld throttles.
@@ -31,6 +32,7 @@ Simple as that.
 ### Step 1: Download the Script
 
 Place the script file in your JMRI scripts directory:
+
 - **Windows:** `C:\Users\[YourName]\JMRI\jython\`
 - **Mac:** `/Users/[YourName]/JMRI/jython/`
 - **Linux:** `/home/[YourName]/JMRI/jython/`
@@ -57,3 +59,4 @@ Default values (edit in script if needed):
 SCAN_INTERVAL = 60        # Scan slot table every 60 seconds
 LOCO_TIMEOUT = 300        # 5 minutes for single locos
 CONSIST_TIMEOUT = 480     # 8 minutes for consists (optional)
+```
