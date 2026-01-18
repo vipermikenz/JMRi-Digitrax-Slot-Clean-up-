@@ -1,0 +1,8 @@
+# protected_addresses.txt
+# One DCC address per line. These are never dispatched/released.
+# Example: protect a yardmaster’s held loco or a long-staging consist.
+# rename to _protected_addresses.txt
+
+9999
+12345
+2001

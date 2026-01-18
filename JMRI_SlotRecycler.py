@@ -45,11 +45,13 @@ ALLOWED_THROTTLE_IDS = []                # e.g. [0x12, 0x13]
 
 # Protected addresses file: one DCC address per line (e.g., 12345)
 # Those addresses will never be dispatched/released by this script.
-PROTECTED_ADDRESSES_FILE = os.path.join(os.path.expanduser("~"), "protected_addresses.txt")
+BASE_DIR = r"C:\JMRI\FreemoSlotRecycler"
+PROTECTED_ADDRESSES_FILE = os.path.join(BASE_DIR, "protected_addresses.txt")
 
 # Logging
 LOG_TO_CONSOLE = True
-LOG_FILE = os.path.join(os.path.expanduser("~"), "FreemoSlotRecycler.log")
+LOG_FILE = os.path.join(BASE_DIR, "FreemoSlotRecycler.log")
+
 
 # Safety switches
 DRY_RUN = False                          # Set True to see what it would do without sending any LocoNet messages
