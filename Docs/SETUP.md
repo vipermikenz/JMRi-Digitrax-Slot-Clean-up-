@@ -61,7 +61,9 @@ Using a fixed path avoids Windows user-profile and permission issues.
 Edit the following lines near the top of FreemoSlotRecycler.py:
 
 BASE_DIR = r"C:\JMRI\FreemoSlotRecycler"
+
 PROTECTED_ADDRESSES_FILE = os.path.join(BASE_DIR, "protected_addresses.txt")
+
 LOG_FILE = os.path.join(BASE_DIR, "FreemoSlotRecycler.log")
 
 This ensures:
